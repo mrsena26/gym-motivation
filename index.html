@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Motivation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Did you go to the gym today?</h1>
-    <button onclick="showMessage()">Yes</button>
-    <button onclick="showMessage()">No</button>
+   
 
-    <p id="message" style="display: none; color: red;">Get to the gym! No excuses!</p>
+    <div class="header">
+        <div class="top-bar">
+            <button class="login-button">Log In</button>
+            <button class="join-button">Join</button>
+        </div>
+    </div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").style.display = "block";
-        }
-    </script>
+    <div class="main-content">
+        <h1>Did you go to the gym today?</h1>
+        <button onclick="showMessage()">Yes</button>
+        <button onclick="showMessage()">No</button>
+        <p id="message" style="display: none; color: red; font-size: 18px; margin-top: 20px;">
+            Get to the gym! No excuses! 💪
+        </p>
+    </div>
+    <!-- Modal HTML Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Enter Your Name</h2>
+            <form id="userForm">
+                <label for="username">Name:</label>
+                <input type="text" id="username" placeholder="Enter your name">
+                <button type="submit">OK</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 50px; /* Adjust padding as needed */
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed; /* Position the modal relative to the viewport */
+    top: 50%; /* Center the modal vertically */
+    left: 50%; /* Center the modal horizontally */
+    transform: translate(-50%, -50%); /* Center the modal perfectly */
+    z-index: 1000; /* Ensure modal appears above other content */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    width: 300px; /* Set modal width */
+    padding: 20px; /* Add padding inside the modal */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for modal content */
+    padding: 20px; /* Add padding inside modal content */
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* Position relative to the modal */
+}
+
+.close {
+    position: absolute; /* Position the close button relative to the modal */
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+.header {
+    background-color: #ffffff; /* Header background color */
+    padding: 10px 0; /* Padding around the header */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px; /* Padding for buttons */
+}
+
+.login-button,
+.join-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+}
+
+.login-button:hover,
+.join-button:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    margin-top: 50px; /* Margin to separate header and main content */
+}
