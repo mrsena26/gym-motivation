@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Motivation</title>
+</head>
+<body>
+    <h1>Did you go to the gym today?</h1>
+    <button onclick="showMessage()">Yes</button>
+    <button onclick="showMessage()">No</button>
+
+    <p id="message" style="display: none; color: red;">Get to the gym! No excuses!</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
